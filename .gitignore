@@ -1,3 +1,4 @@
 *.o
-rot13/rot13
+recursion/rust/recursion
+rot13/c/rot13
 triangle/triangle
