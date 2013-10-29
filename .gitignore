@@ -5,3 +5,4 @@ triangle/triangle
 input_is_terminal/rust/isatty
 count_in_octal/rust/octal
 integer_sequence/rust/ints
+output_is_terminal/rust/isatty
