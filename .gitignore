@@ -4,3 +4,4 @@ rot13/c/rot13
 triangle/triangle
 count_in_octal/rust/octal
 integer_sequence/rust/ints
+fileio/rust/fileio
