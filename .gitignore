@@ -7,3 +7,4 @@ count_in_octal/rust/octal
 integer_sequence/rust/ints
 fileio/rust/fileio
 output_is_terminal/rust/isatty
+empty_program/rust/empty
