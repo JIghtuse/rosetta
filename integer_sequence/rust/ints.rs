@@ -7,7 +7,7 @@ fn main() {
 	let mut i: BigUint = One::one();
 
 	loop {
-		println(fmt!("%?", i.to_str()));
+		println!("{:s}", i.to_str());
 		i = i + one;
 	}
 }
