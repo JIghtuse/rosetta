@@ -1,7 +1,6 @@
 extern mod std;
 use std::libc;
 
-#[fixed_stack_segment]
 fn main() {
 	let istty = unsafe { libc::isatty(libc::STDOUT_FILENO as i32) } != 0;
 	if (istty) {
