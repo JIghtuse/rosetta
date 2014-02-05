@@ -9,3 +9,4 @@ fileio/rust/fileio
 output_is_terminal/rust/isatty
 empty_program/rust/empty
 command_line_arguments/rust/args
+random_numbers/rust/rand
