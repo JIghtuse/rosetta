@@ -1,4 +1,4 @@
-use std::num::BigUint;
+use std::num::bigint::BigUint;
 use std::num::One;
 
 fn main() {
