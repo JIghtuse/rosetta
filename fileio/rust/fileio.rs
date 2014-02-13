@@ -1,21 +1,16 @@
-extern mod std;
-use std::io;
+use std::io::File;
 
 fn main() {
-    let input_file = &Path("input.txt");
+    let input_file = Path::new("input.txt");
 
-    let input = io::read_whole_file_str(input_file);
-    match input {
+    let input = match File::open(&input_file).read_to_end() {
         Err(e) => fail!(e),
-        Ok(_) => {}
-    }
+        Ok(input) => input
+    };
 
-    let output_file = &Path("output.txt");
-    let output = io::file_writer(output_file, [io::Create, io::Truncate]);
-    match output {
-        Err(e) => fail!(e),
-        Ok(_) => {}
+    let output_file = Path::new("output.txt");
+    match File::create(&output_file).write(input) {
+        Ok(()) => { /* succeeded */ }
+        Err(e) => println!("failed to write: {}", e),
     }
-
-    output.unwrap().write_str(input.unwrap());
 }

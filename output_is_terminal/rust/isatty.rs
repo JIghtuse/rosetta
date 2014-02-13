@@ -3,9 +3,9 @@ use std::libc;
 
 fn main() {
     let istty = unsafe { libc::isatty(libc::STDOUT_FILENO as i32) } != 0;
-    if (istty) {
-        println("stdout is tty");
+    if istty {
+        println!("stdout is tty");
     } else {
-        println("stdout is not tty");
+        println!("stdout is not tty");
     }
 }
