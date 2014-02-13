@@ -1,5 +1,4 @@
-extern mod extra;
-use extra::bigint::BigUint;
+use std::num::BigUint;
 use std::num::One;
 
 fn main() {
