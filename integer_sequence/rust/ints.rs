@@ -1,4 +1,6 @@
-use std::num::bigint::BigUint;
+extern crate num;
+
+use num::bigint::BigUint;
 use std::num::One;
 
 fn main() {

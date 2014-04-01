@@ -1,5 +1,6 @@
-use std::rand;
-use std::rand::distributions::{Normal, IndependentSample};
+extern crate rand;
+
+use rand::distributions::{Normal, IndependentSample};
 
 fn main() {
     let mut rands = [0.0, ..1000];

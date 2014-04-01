@@ -1,4 +1,3 @@
-extern mod std;
 use std::libc;
 
 fn main() {
