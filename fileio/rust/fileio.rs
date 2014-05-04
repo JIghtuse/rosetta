@@ -9,7 +9,7 @@ fn main() {
     };
 
     let output_file = Path::new("output.txt");
-    match File::create(&output_file).write(input) {
+    match File::create(&output_file).write(input.as_slice()) {
         Ok(()) => { /* succeeded */ }
         Err(e) => println!("failed to write: {}", e),
     }
