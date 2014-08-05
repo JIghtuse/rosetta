@@ -8,7 +8,7 @@ fn main() {
 	let mut i: BigUint = One::one();
 
 	loop {
-		println!("{:s}", i.to_str());
+		println!("{}", i);
 		i = i + one;
 	}
 }
